@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BaMg2RUBAan4kIhgtVKsNuxGsZkCRPR3hjr/pFBhn/ulRNluqb+ysax4tmRdnq7QfrlCDEGYja7s+dJrLE4O/Q==",
+  "success": true,
+  "projectFilePath": "/Users/andrew.malone/Downloads/fundamental-api-main/src/Business.Api/Business.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/andrew.malone/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/Users/andrew.malone/.nuget/packages/moq/4.20.69/moq.4.20.69.nupkg.sha512",
+    "/Users/andrew.malone/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/andrew.malone/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

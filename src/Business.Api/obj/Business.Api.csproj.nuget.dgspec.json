@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/andrew.malone/Downloads/fundamental-api-main/src/Business.Api/Business.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/andrew.malone/Downloads/fundamental-api-main/src/Business.Api/Business.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andrew.malone/Downloads/fundamental-api-main/src/Business.Api/Business.Api.csproj",
+        "projectName": "Business.Api",
+        "projectPath": "/Users/andrew.malone/Downloads/fundamental-api-main/src/Business.Api/Business.Api.csproj",
+        "packagesPath": "/Users/andrew.malone/.nuget/packages/",
+        "outputPath": "/Users/andrew.malone/Downloads/fundamental-api-main/src/Business.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrew.malone/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cko-packages-791259062566.d.codeartifact.eu-west-1.amazonaws.com/nuget/cko-packages/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
