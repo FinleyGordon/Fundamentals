@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .  # Set the build context to the root of the project
+      dockerfile: src/Business.Api/Dockerfile  # Use the Dockerfile in the Business.Api folder
+    image: business.api:latest  # Replace with your desired application image name and tag
+    ports:
+      - "3000:80"  # Assuming your application runs on port 80 inside the container
+    depends_on:
+      - dynamodb
+
+  dynamodb:
+    image: amazon/dynamodb-local
+    ports:
+      - "8000:8000"  # Expose DynamoDB Local port 8000 to access it from the host
+    volumes:
+      - dynamodb_data:/data  # Mount a volume for DynamoDB data persistence
+    environment:
+      - AWS_ACCESS_KEY_ID=dummy
+      - AWS_SECRET_ACCESS_KEY=dummy
+volumes:
+  dynamodb_data:  # Define a volume for DynamoDB data persistence

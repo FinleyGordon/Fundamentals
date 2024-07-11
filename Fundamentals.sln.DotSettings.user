@@ -1,0 +1,31 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1922f538_002D1ac6_002D4d29_002Da4dc_002D9d5f628739ad/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllUsers_should_return_all_users #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::C9F0F477-86C0-4210-A83C-5489D8D9AE87::net7.0::Business.Api.Unit.Tests.UserServiceTests.GetAllUsers_should_return_all_users&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ControllerTests.IpControllerTests.Should_return_location_for_valid_ip&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc535c16_002Dadc5_002D4d72_002Db437_002D8c02e5b7d3bc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllUsers_should_return_all_users #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::C9F0F477-86C0-4210-A83C-5489D8D9AE87::net7.0::Business.Api.Unit.Tests.UserServiceTests.GetAllUsers_should_return_all_users&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ControllerTests.IpControllerTests.Should_return_location_for_valid_ip&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ServiceTests.IpServiceTests.Should_return_location_for_valid_ip&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ServiceTests.IpServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ClientTests.IpClientTests.Should_return_location_for_valid_ip&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ClientTests.IpClientTests.Should_return_404_for_null_ip&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ClientTests.IpClientTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C9F0F477-86C0-4210-A83C-5489D8D9AE87::net7.0::Business.Api.Unit.Tests.FactoryDesignPatternTests.VehicleFactoryTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C9F0F477-86C0-4210-A83C-5489D8D9AE87::net7.0::Business.Api.Unit.Tests.FactoryDesignPatternTests.VehicleServiceTest.Should_return_vehicle_description&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e3c43efd_002D1c56_002D4aa1_002Db2bd_002D43ea0ce8b1c6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllUsers_should_return_all_users" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::C9F0F477-86C0-4210-A83C-5489D8D9AE87::net7.0::Business.Api.Unit.Tests.UserServiceTests.GetAllUsers_should_return_all_users&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ControllerTests.IpControllerTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::C38D0E60-B821-4A5B-91C9-9D4209775F3A::net7.0::Location.Api.Unit.Tests.ServiceTests.IpServiceTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::C9F0F477-86C0-4210-A83C-5489D8D9AE87::net7.0::Business.Api.Unit.Tests.FactoryDesignPatternTests.VehicleFactoryTests.Should_return_correct_vehicle_object&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;Project Location="/Users/andrew.malone/Git/fundamental-api/tests/Location.Api.Unit.Tests" Presentation="&amp;lt;Location.Api.Unit.Tests&amp;gt;" /&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
