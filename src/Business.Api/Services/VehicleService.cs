@@ -1,4 +1,5 @@
 using Business.Api.Domain;
+using Business.Api.DTOs;
 using Business.Api.Exceptions;
 using Business.Api.Factories;
 using Business.Api.FactoryDesignPattern;
@@ -24,19 +25,19 @@ public class VehicleService : IVehicleService
 
     public async Task<Vehicle?> GetVehiclesById(int id)
     {
-        //TODO Get a vehicle from the repository
-        throw new NotImplementedException();
+        return await _respository.GetById(id);
+
 
     }
 
     public async Task<List<Vehicle>> GetAllVehicles()
     {
-        //TODO Get all vehicles using the repository
-        throw new NotImplementedException();
+        return await _respository.GetAll();
     }
 
-    public Task AddVehicle(string type, int year, string make, string model)
+    public async Task AddVehicle(CreateVehicleRequest request)
     {
-        //TODO Add a vehicle using the repository
+        Vehicle vehicle = _vehicleFactory.Create(request);
+        await _respository.Add(vehicle);
     }
 }

@@ -7,23 +7,18 @@ namespace Business.Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class VehicleController : ControllerBase
+public class VehicleController(ILogger<VehicleController> logger, IVehicleService vehicleService) : ControllerBase
 {
-    private readonly ILogger<VehicleController> _logger;
-
-    public VehicleController(ILogger<VehicleController> logger)
-    {
-        _logger = logger;
-    }
+    private readonly ILogger<VehicleController> _logger = logger;
 
     [HttpGet()]
     public async Task<List<Vehicle>> GetAll()
     {
         //TODO Get all vehicles from the service.
-        throw new NotImplementedException();
+        return await vehicleService.GetAllVehicles();
     }
     
-    [HttpGet()]
+    [HttpGet("{id:int}")]
     public async Task<List<Vehicle>> GetById(int id)
     {
         //TODO Get vehicle from the service.
@@ -31,11 +26,12 @@ public class VehicleController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateVehicle([FromBody] CreateVehicleRequest request)
+    public async Task<IActionResult> CreateVehicle([FromBody] CreateVehicleRequest request)
     {
         try
         {
             //TODO Call the vehicle service to create a vehicle from the DTO.
+            await vehicleService.AddVehicle(request);
             return Ok("Vehicle created successfully.");
         }
         catch (ArgumentException ex)

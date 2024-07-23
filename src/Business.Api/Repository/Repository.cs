@@ -6,9 +6,8 @@ namespace Business.Api.Repository;
 
 public class Repository : IRepository
 {
-    private const string jsonFileName = "Vehicles.json"; // Update with the actual JSON file name
+    private const string jsonFileName = "../Vehicles.json"; // Update with the actual JSON file name
     private List<Vehicle>? _collection;
-    
 
     public Repository()
     {

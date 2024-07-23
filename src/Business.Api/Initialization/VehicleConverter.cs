@@ -21,7 +21,7 @@ public class VehicleConverter : JsonConverter<Vehicle>
             throw new JsonSerializationException("Invalid or missing vehicle type in JSON data.");
         }
 
-        Vehicle vehicle;
+        Vehicle? vehicle = null;
         switch (vehicleType)
         {
             case "Car":

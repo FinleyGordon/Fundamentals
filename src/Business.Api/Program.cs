@@ -1,12 +1,10 @@
-using Business.Api.Clients;
 using Business.Api.Domain;
 using Business.Api.Factories;
-using Business.Api.FactoryDesignPattern;
 using Business.Api.Initialization;
 using Business.Api.Repository;
 using Business.Api.Services;
+using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
-using Car = Business.Api.FactoryDesignPattern.Car;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +15,13 @@ builder.Logging.AddConsole();
 
 Configure(builder.Services);
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+        { Title = "Business API", Version = "v1" });
+});
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 var app = builder.Build();
 LoadVehicleData(app);
@@ -27,7 +29,8 @@ LoadVehicleData(app);
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseSwagger();
+app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "Business API"));
 app.MapControllers();
 
 app.Run();
